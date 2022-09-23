@@ -89,3 +89,44 @@
         transform: rotate(360deg);
     }
 }
+
+.ex-11-icon:hover{
+    animation: notFullSpin 1s linear infinite;
+}
+
+@keyframes notFullSpin{
+    0%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(320deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: moveSpace 1s linear infinite;
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: moveSpace 1s linear infinite;
+}
+@keyframes moveSpace{
+    0%{
+        left: 10%;
+    }
+    25%{
+        left: 40%;
+    }
+    50%{
+        left: 60%;
+    }
+    75%{
+        left: 80%;
+    }
+    100%{
+        left: 100%;
+    }
+}
